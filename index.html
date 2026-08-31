@@ -14,7 +14,7 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f8fb;color:#1
 .btn:hover{transform:translateY(-1px);box-shadow:0 7px 22px #00000016}.icon{width:28px;font-size:21px}.web{background:#0877bd;color:white}
 .branch-wrap{margin:12px 0}.branch-toggle{justify-content:flex-start;position:relative}.branch-toggle .chevron{margin-left:auto;font-size:18px;transition:.2s}.branch-toggle[aria-expanded="true"] .chevron{transform:rotate(180deg)}
 .branch-menu{display:none;background:#fff;border-radius:14px;box-shadow:0 7px 24px #00000012;border:1px solid #e2eaf0;overflow:hidden;text-align:left}.branch-menu.open{display:block}
-.branch{display:block;text-decoration:none;color:#17324d;padding:14px 17px;border-bottom:1px solid #edf2f5}.branch:last-child{border-bottom:0}.branch strong{display:block;font-size:14px;margin-bottom:4px}.branch span{display:block;font-size:12px;line-height:1.4;color:#687887}.branch:hover{background:#f6f9fc}
+.branch{display:block;color:#17324d;padding:14px 17px;border-bottom:1px solid #edf2f5}.branch:last-child{border-bottom:0}.branch strong{display:block;font-size:14px;margin-bottom:4px}.branch span{display:block;font-size:12px;line-height:1.4;color:#687887}.branch:hover{background:#f6f9fc}.branch-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.branch-actions a,.branch-mails a{display:inline-block;text-decoration:none;color:#0b73b6;font-size:12px;font-weight:700;background:#f3f8fc;border:1px solid #dbe8f0;border-radius:10px;padding:7px 9px}.branch-actions a:hover,.branch-mails a:hover{background:#eaf4fb}.branch-mails{margin-top:9px;display:flex;flex-direction:column;gap:6px}.branch-mails a{font-weight:600;background:transparent;border:0;padding:0}.mail-label{font-size:11px !important;color:#7a8792 !important;font-weight:700 !important}
 .contact{margin-top:25px;padding:17px;border-top:1px solid #dbe5ed}.phone{font-size:18px;font-weight:800}.small{font-size:13px;color:#687887;margin-top:5px}.copy{margin-top:25px;font-size:12px;color:#8a98a4}
 @media(max-width:380px){.wrap{padding-left:15px;padding-right:15px}.name{font-size:22px}}
 </style>
@@ -33,12 +33,77 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f8fb;color:#1
     <span class="icon">📍</span><span>Sucursales</span><span class="chevron">⌄</span>
   </button>
   <div class="branch-menu" id="branchMenu">
-    <a class="branch" href="https://www.google.com/maps/place/Resurtidora+de+Aire+y+Calefacci%C3%B3n+%7C+Doctores+CDMX/@19.4204533,-99.1455762,18.27z/data=!4m6!3m5!1s0x85d202c975a9b04d:0xba42d1d12167c8e!8m2!3d19.4210661!4d-99.1456253!16s%2Fg%2F1tjt28k0" target="_blank" rel="noopener"><strong>Matriz · Doctores, CDMX</strong><span>Dr. Andrade 63, Col. Doctores, Cuauhtémoc, CDMX, C.P. 06720</span><span>☎ (55) 55 78 90 82 · ⏰ Lun-Vie 8:00 am–6:30 pm</span></a>
-    <a class="branch" href="https://www.google.com/maps/search/?api=1&query=Calzada+de+Tlalpan+2354,+Col.+Avante,+Coyoacan,+CDMX+04460" target="_blank" rel="noopener"><strong>Tlalpan, CDMX</strong><span>Calzada de Tlalpan 2354, Col. Avante, Coyoacán, CDMX, C.P. 04460</span><span>☎ (55) 56 89 29 30 · ⏰ Lun-Vie 8:00 am–6:30 pm</span></a>
-    <a class="branch" href="https://www.google.com/maps/search/?api=1&query=Av.+Farallon+194,+Fracc.+Farallon,+Acapulco,+Guerrero+39690" target="_blank" rel="noopener"><strong>Acapulco, Guerrero</strong><span>Av. Farallón 194, Fracc. Farallón, Acapulco, Gro., C.P. 39690</span><span>☎ (744) 488 11 52 · ⏰ 8:00 am–6:00 pm</span></a>
-    <a class="branch" href="https://www.google.com/maps/search/?api=1&query=Jose+Maria+Morelos+126,+Col.+Las+Palmas,+Cuernavaca,+Morelos+62050" target="_blank" rel="noopener"><strong>Cuernavaca, Morelos</strong><span>José María Morelos 126, Col. Las Palmas, Cuernavaca, Morelos, C.P. 62050</span><span>☎ (777) 318 88 57 · ⏰ 8:00 am–6:00 pm</span></a>
-    <a class="branch" href="https://www.google.com/maps/search/?api=1&query=Via+Gustavo+Baz+193,+Col.+El+Mirador,+Tlalnepantla,+Estado+de+Mexico+54080" target="_blank" rel="noopener"><strong>Estado de México · Tlalnepantla</strong><span>Vía Gustavo Baz 193, Col. El Mirador, Tlalnepantla, Edo. Mex., C.P. 54080</span><span>☎ (55) 53 61 24 31 · ⏰ 8:00 am–6:00 pm</span></a>
-    <a class="branch" href="https://www.google.com/maps/search/?api=1&query=Av.+Las+Torres+333,+Col.+Miguel+Alem%C3%A1n,+San+Nicolas+de+los+Garza,+Nuevo+Leon+66470" target="_blank" rel="noopener"><strong>Monterrey, Nuevo León</strong><span>Av. Las Torres 333, Col. Miguel Alemán, San Nicolás de los Garza, N.L., C.P. 66470</span><span>☎ (81) 14 31 22 13 · ⏰ 8:00 am–6:00 pm</span></a>
+    <div class="branch">
+      <strong>Matriz · Doctores, CDMX</strong>
+      <span>Dr. Andrade 63, Col. Doctores, Cuauhtémoc, CDMX, C.P. 06720</span>
+      <div class="branch-actions">
+        <a href="https://www.google.com/maps/place/Resurtidora+de+Aire+y+Calefacci%C3%B3n+%7C+Doctores+CDMX/@19.4204533,-99.1455762,18.27z/data=!4m6!3m5!1s0x85d202c975a9b04d:0xba42d1d12167c8e!8m2!3d19.4210661!4d-99.1456253!16s%2Fg%2F1tjt28k0" target="_blank" rel="noopener">📍 Ver ubicación</a>
+        <a href="tel:5555789082">📞 (55) 55 78 90 82</a>
+      </div>
+      <div class="branch-mails">
+        <span class="mail-label">✉️ Correos</span>
+        <a href="mailto:wendy.rivero@resurtidora.com">Wendy Rivero · Tienda 1</a>
+        <a href="mailto:nora.villanueva@resurtidora.com">Nora Villanueva · Tienda 2</a>
+        <a href="mailto:mayra.ramirez@resurtidora.com">Mayra Ramírez · Ventas</a>
+      </div>
+    </div>
+
+    <div class="branch">
+      <strong>Tlalpan, CDMX</strong>
+      <span>Calzada de Tlalpan 2354, Col. Avante, Coyoacán, CDMX, C.P. 04460</span>
+      <div class="branch-actions">
+        <a href="https://maps.app.goo.gl/eYhM4sTFYGsjHzci8" target="_blank" rel="noopener">📍 Ver ubicación</a>
+        <a href="tel:5556892930">📞 (55) 56 89 29 30</a>
+      </div>
+    </div>
+
+    <div class="branch">
+      <strong>Acapulco, Guerrero</strong>
+      <span>Av. Farallón 194, Fracc. Farallón, Acapulco, Gro., C.P. 39690</span>
+      <div class="branch-actions">
+        <a href="https://maps.app.goo.gl/2BvKUXCcJUX2yRf76" target="_blank" rel="noopener">📍 Ver ubicación</a>
+        <a href="tel:7444881152">📞 (744) 488 11 52</a>
+      </div>
+      <div class="branch-mails">
+        <a href="mailto:yosiani.gasga@resurtidora.com">✉️ Yosiani Gasga · yosiani.gasga@resurtidora.com</a>
+      </div>
+    </div>
+
+    <div class="branch">
+      <strong>Cuernavaca, Morelos</strong>
+      <span>José María Morelos 126, Col. Las Palmas, Cuernavaca, Morelos, C.P. 62050</span>
+      <div class="branch-actions">
+        <a href="https://maps.app.goo.gl/c2BDjPE1KWoUR39y7" target="_blank" rel="noopener">📍 Ver ubicación</a>
+        <a href="tel:7773188857">📞 (777) 318 88 57</a>
+      </div>
+      <div class="branch-mails">
+        <a href="mailto:lludith.pantaleon@resurtidora.com">✉️ Lludith Pantaleón · lludith.pantaleon@resurtidora.com</a>
+      </div>
+    </div>
+
+    <div class="branch">
+      <strong>Estado de México · Tlalnepantla</strong>
+      <span>Vía Gustavo Baz 193, Col. El Mirador, Tlalnepantla, Edo. Mex., C.P. 54080</span>
+      <div class="branch-actions">
+        <a href="https://maps.app.goo.gl/ZogqN59YyjY5EbDC7" target="_blank" rel="noopener">📍 Ver ubicación</a>
+        <a href="tel:5553612431">📞 (55) 53 61 24 31</a>
+      </div>
+      <div class="branch-mails">
+        <a href="mailto:cristina.garcia@resurtidora.com">✉️ Cristina García · cristina.garcia@resurtidora.com</a>
+      </div>
+    </div>
+
+    <div class="branch">
+      <strong>Monterrey, Nuevo León</strong>
+      <span>Av. Las Torres 333, Col. Miguel Alemán, San Nicolás de los Garza, N.L., C.P. 66470</span>
+      <div class="branch-actions">
+        <a href="https://maps.app.goo.gl/3Cw5XkHnkrecu6Jb7" target="_blank" rel="noopener">📍 Ver ubicación</a>
+        <a href="tel:8114312213">📞 (81) 14 31 22 13</a>
+      </div>
+      <div class="branch-mails">
+        <a href="mailto:ventasmonterrey@resurtidora.com">✉️ Eleuterio López · ventasmonterrey@resurtidora.com</a>
+      </div>
+    </div>
   </div>
 </div>
 
